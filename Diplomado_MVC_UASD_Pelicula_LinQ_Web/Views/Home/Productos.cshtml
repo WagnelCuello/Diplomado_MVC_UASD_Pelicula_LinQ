@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Productos";
+}
+
+@model IEnumerable<Diplomado_MVC_UASD_Pelicula_LinQ_Web.Models.Producto>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Productos</title>
+</head>
+<body>
+    <a href="./">Regresar</a>
+    <div>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th></th>
+                <th>Descripcion</th>
+                <th></th>
+                <th>Precio</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Id)</td>
+                    <th></th>
+                    <td>@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                    <th></th>
+                    <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                    <th></th>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

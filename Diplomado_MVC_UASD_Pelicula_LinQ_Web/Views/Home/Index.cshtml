@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Listado de Peliculas";
+}
+
+@model IEnumerable<Diplomado_MVC_UASD_Pelicula_LinQ_Web.Models.Pelicula>
+
+<!DOCTYPE html>
+
+<a href="/Home/Productos">Productos</a>
+
+@*<table>
+    <tr>
+        <th>Titulo</th>
+        <th></th>
+        <th>Director</th>
+        <th></th>
+        <th>Autor Principal</th>
+        <th></th>
+        <th>Num. Autores</th>
+        <th></th>
+        <th>Duracion</th>
+        <th></th>
+        <th>Estreno</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+        <th></th>
+        <td>@Html.DisplayFor(modelItem => item.Director)</td>
+        <th></th>
+        <td>@Html.DisplayFor(modelItem => item.AutorPrincipal)</td>
+        <th></th>
+        <td>@Html.DisplayFor(modelItem => item.NumAutores)</td>
+        <th></th>
+        <td>@Html.DisplayFor(modelItem => item.Duracion)</td>
+        <th></th>
+        <td>@Html.DisplayFor(modelItem => item.Estreno)</td>
+        <th></th>
+    </tr>
+    }
+</table>*@
